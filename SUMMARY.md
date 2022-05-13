@@ -1,3 +1,5 @@
 # Table of contents
 
-* [IntegriteeWiki](README.md)
+* [Integration](README.md)
+  * [Integritee Network](integration/integritee-network/README.md)
+    * [Collator](integration/integritee-network/collator.md)
