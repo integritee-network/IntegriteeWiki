@@ -15,7 +15,7 @@ Integritee takes a phased approach to roll out the Collator operation. Since Col
 **Current Phase: Private Collator Set**
 
 **Phase 0: Private Collator Set**\
-The Genesis of the Integritee network was launched on 17th of May, 2022. Upon genesis, Integritee's network security and the consensus is provided by Polkadot Relay Chain's nominated Proof-of-Stake (nPoS) validators. Just like Statemine (the common-good asset parachain on Polkadot), Integritee's Collators initially will be run by Integritee, until the Collator software is stable and can be released to the wider community.
+The Genesis of the Integritee network was launched on 18th December, 2021. Upon genesis, Integritee's network security and the consensus is provided by Polkadot Relay Chain's nominated Proof-of-Stake (nPoS) validators. Just like Statemine (the common-good asset parachain on Polkadot), Integritee's Collators initially will be run by Integritee, until the Collator software is stable and can be released to the wider community.
 
 **Phase 1: Authorized Collator Set (We are here)**\
 Through governance approval, Integritee will then open the Collator set to an authorized set of collators. While there are no block rewards nor additional incentives for these authorized collators, they are paid a reasonable rate for their node service provisioning by Integritee.
