@@ -45,7 +45,7 @@ Refer to the [Full Node Guide](broken-reference).
 
 #### **Key Management**
 
-Acala Collator needs an Aura session key. RPC `author_rotateKeys` or `author_insertKey` can be used to update the session key.
+The Integritee Collator needs an Aura key. RPC `author_insertKey` can be used to insert the Aura key.
 
 #### **Registration**
 
