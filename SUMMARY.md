@@ -2,6 +2,7 @@
 
 * [Learn](README.md)
   * [Introduction](learn/introduction.md)
+  * [Products Overview](learn/products-overview.md)
   * [Treasury](learn/treasury.md)
 * [Get started](get-started.md)
 * [Integration](<README (1).md>)
