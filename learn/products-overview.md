@@ -12,15 +12,15 @@ Substrate pallets – pre-built modules of the Substrate framework – can be re
 
 #### Main advantages
 
-☞ Unrivalled speed: Up to 1 million transactions per second​
+• Unrivalled speed: Up to 1 million transactions per second​
 
-☞ TEE’s verifiable nature makes SDK trustworthy & transparent
+• TEE’s verifiable nature makes SDK trustworthy & transparent
 
-☞ SDK allows you to choose what suits you best: run it on your hardware or rent it out from us​
+• SDK allows you to choose what suits you best: run it on your hardware or rent it out from us​
 
-☞ Privacy by design: TEE technology ensures data protection & compliance with privacy regulations​
+• Privacy by design: TEE technology ensures data protection & compliance with privacy regulations​
 
-☞ SDK is interoperable with other blockchain systems & web2 API​
+• SDK is interoperable with other blockchain systems & web2 API​
 
 
 
@@ -40,13 +40,13 @@ All the information delivered by the Attesteer is registered on Integritee’s b
 
 #### Main advantages
 
-☞ Data and processes’ integrity is verified and registered on our own public network = transparency & trust​
+• Data and processes’ integrity is verified and registered on our own public network = transparency & trust​
 
-☞ Provides superior interoperability as it can be applied to any Intel SGX enclave​
+• Provides superior interoperability as it can be applied to any Intel SGX enclave​
 
-☞ Highly customizable: Remotely attests at the frequency and duration of your choice​
+• Highly customizable: Remotely attests at the frequency and duration of your choice​
 
-☞ Fees for the usage of our network are charged in TEER. Services are offered at a stable USD price as TEER usage fees are automatically adjusted according to the fixed USD price and current TEER/USD exchange rate​
+• Fees for the usage of our network are charged in TEER. Services are offered at a stable USD price as TEER usage fees are automatically adjusted according to the fixed USD price and current TEER/USD exchange rate​
 
 ### TEEracle
 
