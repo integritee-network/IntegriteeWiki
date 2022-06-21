@@ -92,8 +92,10 @@ You can use our custom Integritee Subscan to see whats happening on chain:&#x20;
 
 
 
-<mark style="color:green;">**3. UNLOCK VESTED TEER**</mark>
+<mark style="color:green;">**3. UNLOCK VESTED TEER & FOLLOW THE PRICE OF TEER TOKEN**</mark>
 
-<mark style="color:green;">****</mark>
+Our token is listed and tradable. You can buy/follow our TEER token in the following links:
 
-<mark style="color:green;">**4. FOLLOW THE PRICE OF TEER TOKEN**</mark>
+* **Kraken. com**: [https://www.kraken.com/prices/teer-integritee-price-chart](https://www.kraken.com/prices/teer-integritee-price-chart)
+* **Gate.io**: [https://www.gate.io/trade/TEER\_USDT](https://www.gate.io/trade/TEER\_USDT)
+* **Mex.com**: [https://www.mexc.com/exchange/TEER\_USDT](https://www.mexc.com/exchange/TEER\_USDT)
