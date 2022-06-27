@@ -74,12 +74,12 @@ More info: [https://github.com/integritee-network/parachain/issues/84](https://g
 
 1. Checkout our fix branch [https://github.com/integritee-network/parachain/tree/skip-signature-verification](https://github.com/integritee-network/parachain/tree/skip-signature-verification)
 2. Build the code as it is described in [Run from source code](parachain-on-kusama.md#run-from-source-code) section
-3. Once the sync left #38220 it is safe to stop and continue with the latest version
+3. Once the sync left #38220 one should stop it and continue with the latest version.
 
 #### Using our pre-built binary
 
 1. Download [https://github.com/integritee-network/parachain/releases/download/1.5.15/integritee-collator-accept-all-signatures](https://github.com/integritee-network/parachain/releases/download/1.5.15/integritee-collator-accept-all-signatures) , replace it with integritee binary. Follow the instructions in [Run from source code](parachain-on-kusama.md#run-from-source-code) section.
-2. Once the sync continued, you can use the latest binary
+2. Once the sync left #38220 one should stop it and continue with the latest version.
 
 #### Download our initial DB
 
@@ -88,5 +88,5 @@ Once parachain sync stalls at #38220 you can replace the DB with our one:
 1. Download [https://github.com/integritee-network/parachain/releases/download/1.5.13/integritee-kusama-48375.RocksDb.tar.lz4](https://github.com/integritee-network/parachain/releases/download/1.5.13/integritee-kusama-48375.RocksDb.tar.lz4)
 2. Extract it \
    `curl -o - -L https://github.com/integritee-network/parachain/releases/download/1.5.13/integritee-kusama-48375.RocksDb.tar.lz4 | lz4 -c -d - | tar -x -C /path/chains/integritee-kusama/`
-3. Run the binary as described above
+3. Once the sync left #38220 one should stop it and continue with the latest version.
 
