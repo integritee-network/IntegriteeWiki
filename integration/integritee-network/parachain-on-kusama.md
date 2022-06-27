@@ -5,7 +5,8 @@ description: Please read carefully
 # 🚀 Parachain on Kusama
 
 {% hint style="warning" %}
-Due to a configuration error, the trivial extrinsic stalls the parachain. Go to [troubleshooting](parachain-on-kusama.md#troubleshooting) for more info!
+Due to a configuration error, a trivial extrinsic stalls the parachain. \
+Go to [troubleshooting](parachain-on-kusama.md#troubleshooting) for more info!
 {% endhint %}
 
 ## Spec Requirement
@@ -15,7 +16,7 @@ Same as the Polkadot full node requirements. See: [https://wiki.polkadot.network
 ## Run from Source Code
 
 * Clone the repo: [https://github.com/integritee-network/parachain](https://github.com/integritee-network/parachain)
-* Checkout tag here: [https://github.com/integritee-network/parachain/tags](https://github.com/integritee-network/parachain/tags)
+* Or checkout one tag from here: [https://github.com/integritee-network/parachain/tags](https://github.com/integritee-network/parachain/tags)
 * Install dependencies `rustup update` \
   More info: [https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot#node-prerequisites-install-rust-and-dependencies](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot#node-prerequisites-install-rust-and-dependencies)
 * Build Integritee: `cargo build --release`
@@ -44,6 +45,7 @@ Same as the Polkadot full node requirements. See: [https://wiki.polkadot.network
 ## Example CLI
 
 ```
+./target/release/integritee
 --base-path=/integritee/data
 --chain=integritee-kusama
 --name=integritee-rpc
@@ -57,7 +59,6 @@ Same as the Polkadot full node requirements. See: [https://wiki.polkadot.network
 --execution=wasm
 --
 --chain=kusama
-
 ```
 
 ## Troubleshooting
