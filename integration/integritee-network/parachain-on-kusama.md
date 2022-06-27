@@ -16,8 +16,9 @@ Same as the Polkadot full node requirements. See: [https://wiki.polkadot.network
 
 * Clone the repo: [https://github.com/integritee-network/parachain](https://github.com/integritee-network/parachain)
 * Checkout tag here: [https://github.com/integritee-network/parachain/tags](https://github.com/integritee-network/parachain/tags)
-* Install dependencies
-* Build Acala: `cargo build --release`
+* Install dependencies `rustup update` \
+  More info: [https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot#node-prerequisites-install-rust-and-dependencies](https://wiki.polkadot.network/docs/maintain-guides-how-to-validate-polkadot#node-prerequisites-install-rust-and-dependencies)
+* Build Integritee: `cargo build --release`
 * Run `./target/release/integritee --chain=integritee-kusama \` \
   `-- --chain=kusama`
 
