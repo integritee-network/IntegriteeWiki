@@ -83,7 +83,7 @@ More info: [https://github.com/integritee-network/parachain/issues/84](https://g
 
 #### Download our initial DB
 
-Once parachain sync stalls at #38220 you can replace the DB with our one:
+Start with our snapshot generated at block **#48375**:
 
 1. Download [https://github.com/integritee-network/parachain/releases/download/1.5.13/integritee-kusama-48375.RocksDb.tar.lz4](https://github.com/integritee-network/parachain/releases/download/1.5.13/integritee-kusama-48375.RocksDb.tar.lz4)
 2. Extract it \
