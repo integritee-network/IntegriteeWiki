@@ -10,6 +10,7 @@
 * [Integration](<README (1).md>)
   * [Integritee Network](integration/integritee-network/README.md)
     * [Collator](integration/integritee-network/collator.md)
+    * [🚀 Parachain on Kusama](integration/integritee-network/parachain-on-kusama.md)
 * [For Developers](for-developers.md)
 * [Misc](misc/README.md)
   * [Intel SGX](misc/intel-sgx.md)
