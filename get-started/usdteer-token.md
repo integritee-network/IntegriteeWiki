@@ -100,6 +100,6 @@ Our token is listed and tradable. You can buy/follow our TEER token in the follo
 * **Gate.io**: [https://www.gate.io/trade/TEER\_USDT](https://www.gate.io/trade/TEER\_USDT)
 * **Mex.com**: [https://www.mexc.com/exchange/TEER\_USDT](https://www.mexc.com/exchange/TEER\_USDT)
 
-If you have locked DOT in your account (because you e.g. bonded them for voting, or you bought locked DOT during a token sale) then you can check on polkadot.js when they will become available.
+If you have locked TEER in your account (because you e.g. bonded them for voting, or you bought locked TEER during a token sale) then you can check on polkadot.js when they will become available.
 
-More information here: [How can I see when my DOT tokens will be unlocked?](https://support.polkadot.network/support/solutions/articles/65000170076-how-can-i-see-when-my-dot-tokens-will-be-unlocked-)
+More information here: [How can I see when my TEER tokens will be unlocked?](https://support.polkadot.network/support/solutions/articles/65000170076-how-can-i-see-when-my-dot-tokens-will-be-unlocked-)
