@@ -6,7 +6,7 @@ We know it might not be easy to navigate the blockchain – and Polkadot – wor
 
 ### Blockchain
 
-### Bridges
+Though it is a bread term, it most often refers to a Network of computers that uses a common software to order data in such a way that, after being sequenced, ensures it can't be adjusted or tampered with by anyone dishonest user. It creates a trusted record using cryptography.&#x20;
 
 ### Crowdloan
 
@@ -28,6 +28,8 @@ The General Data Protection Regulation is a regulation in EU law on data protect
 
 ### Governance
 
+Blockchain governance refers to the formal structure that a blockchain ecosystem maintains to ensure the long-term integrity, transparency, and technical innovation of the project. An equitable governance structure involves different methodologies for voting on platform technology, strategy, updates, and rules. Blockchain governance typically includes both on-chain governance (like cryptographic algorithms that govern the network's computational architecture and consensus mechanism) and off-chain governance (like interpersonal decision-making that is not written in computer code).
+
 ### Integritee
 
 Integritee is a parachain on Kusama, and the most scalable public blockchain solution for securely processing sensitive business or personal data.
@@ -40,6 +42,12 @@ Integritee is a parachain on Kusama, and the most scalable public blockchain sol
 
 ### Kusama
 
+Kusama is a scalable network of specialized blockchains built using Substrate and nearly the same codebase as Polkadot. The network is an experimental development environment for teams who want to move fast and innovate on Kusama, or prepare for deployment on Polkadot.
+
+Kusama was founded in 2019 by Gavin Wood, founder of Polkadot and co-founder and former CTO of Ethereum.
+
+More information here: [Kusama Network](https://kusama.network/)
+
 ### Oracle
 
 ### OVH
@@ -50,11 +58,27 @@ Website: [OVH Cloud](https://www.ovhcloud.com/en/)
 
 ### Parachain
 
+Parachains are Polkadot-based independent blockchains that connect to and run off of the Polkadot network’s main Relay Chain Parachains can also be considered shards (with entire blockchains inside them). Parachains run in parallel to the Relay Chan and process transactions through parallelization by using sharding and exhibit extremely fast transaction times. Parachains are able to host their own blockchain-based tokenized assets within their independent network and control their own governance processes by paying to use a parachain slot by attaching to the main Relay Chain. Parachains also run on the Rococo Relay Chain on the Kusama network (both the Polkadot and Kusama networks have the capacity to operate 100 parachains via their corresponding Relay Chain).
+
 ### Polkadot
+
+IT is a software that seeks to incentivize a global network of computers to operate a blockchain on top of which users can launch and operate their own blockchain.&#x20;
+
+Polkadot is a protocol that connects blockchains — allowing value and data to be sent across previously incompatible networks (Bitcoin and Ethereum, for example). It’s also designed to be fast and scalable. The DOT token is used for [staking](https://www.coinbase.com/learn/crypto-basics/what-is-staking) and governance; it can be bought or sold on Coinbase and other exchanges.
+
+**More information here**: [Polkadot Network](https://polkadot.network/) & [What is Polkadot? YT](https://www.youtube.com/watch?v=kw8eu2VadFA)
 
 ### Relay Chain
 
+The Relay Chain is the central chain that is used by the Polkadot network. Polkadot is a heterogeneous multi-chain and translation architecture that allows specialized blockchains and public blockchains to connect within a unified network.
+
 ### **SDK**
+
+Our SDK enables developers to build high-performance, scalable, second-layer blockchain solutions quickly, easily and optimized for any use case. You can add privacy features to your solution and freely decide which information to keep confidential and which to make public.
+
+The SDK is relevant to any Substrate (the blockchain framework that underlies Polkadot) developer in need for low latencies, scalability and/or confidentiality. Both existing Substrate-based projects and developers who want to build a new application from scratch can leverage the benefits of our SDK. Substrate pallets, which are the pre-built modules of the Substrate framework, can be reused and instantiated inside an Integritee Sidechain with just a few lines of glue code. Develop your use case on Substrate, write your own pallets and integrate any of them seamlessly (without modification) into the Sidechain SDK to benefit from low latencies, scalability and confidentiality.
+
+The SDK provides all the groundwork for trusted execution by setting up Sidechain validators within TEEs, thereby enabling confidential state transition functions and greatly reducing the complexity of the consensus protocol. Sidechains connected to our Parachain benefit from a service called remote attestation, which delivers a public (i.e., verifiable by any third party) cryptographic proof of the TEEs’ and process’ integrity.
 
 ### **Sidechain**
 
@@ -64,7 +88,9 @@ The Polkadot platform offers highly competitive scalability balanced with securi
 
 **More information here:** [Sidechain 101: What are sidechains and why do we need them on Polkadot?](https://medium.com/integritee/sidechain-101-what-are-sidechains-and-why-do-we-need-them-on-polkadot-e394e7065a50)
 
-### **Substrate**
+### **Substrate (Polkadot Development Framework)**
+
+Substrate is a blockchain integration platform and application development framework that was designed by Parity Technologies, the creator of blockchain interoperability pioneer Polkadot. The purpose of Substrate is to help simplify the process of building dApps or independent blockchains that run on the Polkadot network. Substrate accomplishes this by offering a fully adaptable blockchain design framework that features software development in numerous languages, forkless upgradability, light-client architecture, and multifaceted development tools. As a result, Substrate is one of the most powerful components of the Polkadot ecosystem. However, blockchains on the Polkadot network do not need to be built with Substrate.
 
 ### **TEER**
 
