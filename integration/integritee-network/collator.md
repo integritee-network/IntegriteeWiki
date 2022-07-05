@@ -52,5 +52,5 @@ subkey insert --suri <suri> --base-path /integritee/data --key-type aura
 #### **Registration**
 
 * Registering a new collator is currently a privileged low-level function call; `system.set_storage`. Therefore, registration needs to pass governance. The low-level call will be replaced with the introduction of the `pallet-collator-selection`. However, this will not change that updating the collator set needs governance.
-* Authorized collator provides will have to submit the public key of the Aura session key for the collator, and the Integritee Council shall submit a proposal for the governance process.
+* Authorized collator providers will have to submit the public key of the Aura session key for the collator, and the Integritee Council shall submit a proposal for the governance process.
 
