@@ -26,7 +26,7 @@ A burning function burns a fraction of each fee paid to the treasury. This impli
 
 **Value of TEER**
 
-****![](<../.gitbook/assets/image (2).png>)****
+****![](<../.gitbook/assets/image (2) (1).png>)****
 
 ****
 
