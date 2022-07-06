@@ -1,6 +1,8 @@
 # Introduction
 
-## &#x20;<a href="#roadmap" id="roadmap"></a>
+Integritee is a scalable blockchain solution enabling secure and compliant processing of sensitive data. We provide a scalable, interoperable and confidential network layer that can be used by companies and developers to establish new user-centric privacy solutions that leverage the combined benefits of blockchain and trusted execution environments (TEEs)&#x20;
+
+Integritee provides customers with the tools and support to run their applications in trusted, secure environments.
 
 ## Roadmap <a href="#roadmap" id="roadmap"></a>
 
