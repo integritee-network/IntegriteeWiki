@@ -37,7 +37,7 @@ See [parachain-on-kusama.md](parachain-on-kusama.md "mention")for how to run a f
 
 #### **Key Management**
 
-The Aura Consensus works by registering a fixed set of authorities that will produce blocks in round-robin fashion. Aura keys are `sr2559` keys and can be created with \[Subkey]\([https://core.tetcoin.org/docs/en/knowledgebase/integrate/subkey](https://core.tetcoin.org/docs/en/knowledgebase/integrate/subkey)).
+The Aura Consensus works by registering a fixed set of authorities that will produce blocks in round-robin fashion. Aura keys are `sr2559` keys and can be created with [Subkey](https://core.tetcoin.org/docs/en/knowledgebase/integrate/subkey).
 
 The Aura key needs to be injected into the node's keystore. The node will start to collate if it finds its key in the registered authority set. Key injection can be done with the RPC `aura_insertKey` or with Subkey.
 
