@@ -2,7 +2,10 @@
 
 * [Learn](README.md)
   * [Introduction](learn/introduction.md)
-  * [Products Overview](learn/products-overview.md)
+  * [Products Overview](learn/products-overview/README.md)
+    * [SDK – Software Development Kit](learn/products-overview/sdk-software-development-kit.md)
+    * [Attesteer](learn/products-overview/attesteer.md)
+    * [TEEracle](learn/products-overview/teeracle.md)
   * [Treasury](learn/treasury.md)
 * [Governance Overview](governance-overview/README.md)
   * [Governance Parameters](governance-overview/governance-parameters.md)

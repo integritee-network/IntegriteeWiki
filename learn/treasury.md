@@ -4,11 +4,10 @@ Integritee’s Treasury holds the funds that secure the future development of th
 
 **TEER is also used to:**
 
-* Self-fund a parachain on Kusama
 * Improve the platform and protocol operations
 * Enhance the network’s security operations
 * Support software development
-* Foster cryptocurrency exchange on dedicated platforms ???
+* Grant treasury funds and rewards to our community
 
 Firms intending to use Integritee’s service need to acquire our token (TEER), either on the open market or through an intermediary that accepts fiat payments and pays the on-chain fees on their behalf. A token can only have intrinsic value if it serves to achieve a purpose, such as giving access to a valuable service. This creates a direct relationship between the value of Integritee’s services and the demand for the token. As a result, when the demand for Integritee’s services increases, demand for TEER – and its value – will also increase.
 

@@ -4,6 +4,8 @@ We know it might not be easy to navigate the blockchain – and Polkadot – wor
 
 ### **Attesteer**
 
+Attesteer is a service offered by Integritee. Relevant to users of Trusted Execution Environments (TEEs), it aims to provide them with public auditability and an integrable service. It delivers the same proof as Intel SGX with the additional benefit of verifying the software running in the TEEs hasn't been modified. All the information delivered by the Attesteer is registered on Integritee's blockchain.
+
 ### Blockchain
 
 Though it is a bread term, it most often refers to a Network of computers that uses a common software to order data in such a way that, after being sequenced, ensures it can't be adjusted or tampered with by anyone dishonest user. It creates a trusted record using cryptography.&#x20;
@@ -50,6 +52,8 @@ More information here: [Kusama Network](https://kusama.network/)
 
 ### Oracle
 
+An oracle is a third-party information service provides that sends real-word data to a blockchain protocol. They are used to empower a blockchain network's protocol by securing, verifying, and strengthening the validity of data that said network receives and makes use of. There are different kinds of oracles and they can be centralized or decentralised. One of the most common uses for oracles is providing prices and data needed for financial mechanisms in the decentralised finance (DeFi) industry.
+
 ### OVH
 
 Cloud infrastructures, dedicated hosting, domain names, e-commerce, storage and archiving and virtual servers; OVH is a solution to develop IT projects. OVH offers a wide range of IT services to companies, and to individuals passionate about tech.
@@ -74,9 +78,9 @@ The Relay Chain is the central chain that is used by the Polkadot network. Polka
 
 ### **SDK**
 
-Our SDK enables developers to build high-performance, scalable, second-layer blockchain solutions quickly, easily and optimized for any use case. You can add privacy features to your solution and freely decide which information to keep confidential and which to make public.
+The SDK – Software Development Kit is a tool created by Integritee. It enables developers to build high-performance, scalable, second-layer blockchain solutions quickly, easily, and optimized for any use case. You can add privacy features to your solution and freely decide which information to keep confidential and which to make public.
 
-The SDK is relevant to any Substrate (the blockchain framework that underlies Polkadot) developer in need for low latencies, scalability and/or confidentiality. Both existing Substrate-based projects and developers who want to build a new application from scratch can leverage the benefits of our SDK. Substrate pallets, which are the pre-built modules of the Substrate framework, can be reused and instantiated inside an Integritee Sidechain with just a few lines of glue code. Develop your use case on Substrate, write your own pallets and integrate any of them seamlessly (without modification) into the Sidechain SDK to benefit from low latencies, scalability and confidentiality.
+The SDK is relevant to any Substrate (the blockchain framework that underlies Polkadot) developer in need for low latencies, scalability and/or confidentiality. Both existing Substrate-based projects and developers who want to build a new application from scratch can leverage the benefits of our SDK. Substrate pallets, which are the pre-built modules of the Substrate framework, can be reused and instantiated inside an Integritee Sidechain with just a few lines of glue code. Develop your use case on Substrate, write your own pallets and integrate any of them seamlessly (without modification) into the Sidechain SDK to benefit from low latencies, scalability, and confidentiality.
 
 The SDK provides all the groundwork for trusted execution by setting up Sidechain validators within TEEs, thereby enabling confidential state transition functions and greatly reducing the complexity of the consensus protocol. Sidechains connected to our Parachain benefit from a service called remote attestation, which delivers a public (i.e., verifiable by any third party) cryptographic proof of the TEEs’ and process’ integrity.
 
@@ -98,13 +102,15 @@ The TEER token is the fuel that drives the Integritee platform — a common toke
 
 ### **Teeracle**
 
+_**(Waiting for info confirmation)**_
+
 ### **Trusted Execution Environment**
 
 A **** secure area of a main processor. It guarantees code and data loaded inside to be protected with respect to confidentiality and integrity, Data integrity — prevents unauthorized entities from altering data when any entity outside the TEE processes data, Code integrity — the code in the TEE cannot be replaced or modified by unauthorized entities. This is done by implementing unique, immutable, and confidential architectural security such as Intel® Software Guard Extensions (Intel® SGX) which offers hardware-based memory encryption that isolates specific application code and data in memory.
 
 ### XCM Integration
 
-
+XCM integrations – cross-consensus messaging – enable connections between the different parachains of the Polkadot ecosystems. XCM is, in a way, a universal language that enables different systems (in this case, projects) to speak to each other. This integration allows different projects to connect, which enables the exchange of tokens, the use of certain applications, and much more. XCM integrations represent a step toward interoperability in the Polkadot and Kusama networks.
 
 ### Wallet
 
