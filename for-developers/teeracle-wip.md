@@ -91,3 +91,13 @@ impl OracleSource for CoinGeckoSource {
 ```
 
 There is a bit more code for the `CoinGeckoSource`, but this snipped mostly covers what is needed to add a new source.
+
+### How to build a USD-DOT CoinGecko Oracle from the Template
+
+Above, we described from a mid-level perspective how to adjust the TEEracle template for custom exchange-rate oracle requests. Here, we will go through the most simple example, where we use one of the predefined sources, and we feed it into an Integritee solo node.
+
+ToDo:&#x20;
+
+* Add specific code changes of TEEracle for USD-Dot Pair
+* How to get & start the Integritee solo node
+* How to start the TEEracle
