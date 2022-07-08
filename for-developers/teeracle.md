@@ -1,4 +1,8 @@
-# TEEracle (WIP)
+---
+description: This is still a WIP
+---
+
+# TEEracle
 
 The TEEracle SDK facilitates submission of oracle data into the Integritee parachain.
 

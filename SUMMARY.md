@@ -19,7 +19,7 @@
     * [Collator](integration/integritee-network/collator.md)
     * [🚀 Parachain on Kusama](integration/integritee-network/parachain-on-kusama.md)
 * [For Developers](for-developers/README.md)
-  * [TEEracle (WIP)](for-developers/teeracle-wip.md)
+  * [TEEracle](for-developers/teeracle.md)
 * [Misc](misc/README.md)
   * [Intel SGX](misc/intel-sgx.md)
   * [Contributing](misc/contributing.md)
