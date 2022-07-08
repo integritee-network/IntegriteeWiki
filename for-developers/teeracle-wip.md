@@ -2,7 +2,7 @@
 
 The TEEracle SDK facilitates submission of oracle data into the Integritee parachain.
 
-## How-To: Get Your Currency Exchange Data
+## Case: Currency Exchange Rate Oracle
 
 We already have a running TEEracle connected to the Integritee parachain that supplies the TEER-USD exchange rate. This exchange rate will be used to offer stable USD fees. Here, we quickly go through the relevant pieces of the code that need to be updated to fetch your own exchange rate.
 
@@ -32,7 +32,7 @@ The scheduling is as simple as it could be, it is a CLI argument simply set the 
 
 ### Setup API Keys
 
-TODO
+CoinGecko has a very generous free plan for its API, which does not need a setup of the API-KEY. Coinmarket Cap does always need an API-Key. Our Teeracle reads the Api-key from an environment variable: `COINMARKETCAP_KEY`.
 
 ### Web2 Data Fetching
 
