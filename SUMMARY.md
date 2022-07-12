@@ -20,6 +20,8 @@
     * [🚀 Parachain on Kusama](integration/integritee-network/parachain-on-kusama.md)
 * [For Developers](for-developers/README.md)
   * [TEEracle](for-developers/teeracle.md)
+  * [Sidechain SDK](for-developers/sidechain-sdk.md)
+  * [Offchain Worker SDK](for-developers/offchain-worker-sdk.md)
 * [Misc](misc/README.md)
   * [Intel SGX](misc/intel-sgx.md)
   * [Contributing](misc/contributing.md)
