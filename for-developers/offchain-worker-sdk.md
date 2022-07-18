@@ -2,16 +2,16 @@
 
 ## What is an offchain worker?
 
-A TEE offchain worker is used to execute operations in a trusted manner. A client submits these operations to a substrate 'parentchain', which can be either a parachain or a solochain. The operations are opaque to the parentchain because they are encrypted. Only the client and the TEE can see the operation's content.
+A TEE offchain worker is used to execute operations in a trusted manner. A client submits these operations to a substrate 'parentchain', which can be either a parachain or a solochain. Usually, this will be the Integritee Parachain. The operations are opaque to the parentchain because they are encrypted. Only the client and the TEE can see the operation's content.
 
 Sending an encrypted operation to the parentchain, which is then picked up and executed by a TEE offchain worker, is called 'indirect invocation'. An offchain-worker only supports indirect invocation and 'getters'. In order to encrypt the operation, a client can query the offchain worker directly (with a 'getter') for the 'shielding key', which is an RSA 3072 public key.
 
 Multiple offchain workers running in parallel share only the shielding key, but nothing else. They arrive at the same state independently by executing all the operations found on the parentchain, which guarantees ordering of operations.
 
 
-### What is the difference between an offchain worker and a worker with sidechain?
+### What is the difference between an offchain worker and a sidechain validateer?
 
-An offchain-worker supports only 'indirect invocation', which means it executes only operations that are submitted to the parentchain (encrypted, in an extrinsic). As a result, the operation throughput is limited by the block production cycle on a parentchain. 'Direct invocation', available in a worker with sidechain, allows a client to send operations directly to a worker, allowing for much higher operation throughput. This is possible, because the sidechain allows sharing and synchronizing state between workers, without having to rely on the parentchain.
+An offchain-worker supports only 'indirect invocation', which means it executes only operations that are submitted to the parentchain (encrypted, in an extrinsic). As a result, the operation throughput is limited by the block production cycle on a parentchain. 'Direct invocation', available in a sidechain validateer, allows a client to send operations directly to a worker, allowing for much higher operation throughput. This is possible, because the sidechain allows sharing and synchronizing state between workers, without having to rely on the parentchain.
 
 **Note:** More information on the difference between direct and indirect invocation can be found in [this](https://book.integritee.network/design.html) section of the Integritee book.
 
@@ -23,9 +23,9 @@ Default workflow for executing operations on an offchain worker from a client's 
 2. Get the shielding key from an off-chain worker
     * In case there are multiple off-chain workers, any of them will work, since they all share the shielding key
 3. Encode and encrypt the operation using the shielding key
-4. Pack the encrypted operation into an extrinsic
+4. Wrap the encrypted operation into a parentchain extrinsic
 5. Send the extrinsic to the parentchain
-6. Wait for the `ProcessedParentchainBlock` event, with the block hash from your extrinsic.
+6. Wait for the `ProcessedParentchainBlock` event, with the hash of the parentchain block including your extrinsic.
 
 Examples of this workflow can be found in our CLI client implementation, [here](https://github.com/integritee-network/worker/blob/72d9ba960803b367a9cb4f0bc62d0f4a4b13fe6d/cli/src/trusted_commands.rs#L167) and [here](https://github.com/integritee-network/worker/blob/72d9ba960803b367a9cb4f0bc62d0f4a4b13fe6d/cli/src/trusted_operation.rs#L98).
 
@@ -78,6 +78,8 @@ Executing the business logic is done in [`stf_sgx.rs`](https://github.com/integr
 #### Example from Integritee book
 
 The [Integritee book](https://book.integritee.network/introduction.html) also shows a concrete [example](https://book.integritee.network/howto_stf.html#integritee-worker) ([Encointer](https://encointer.org/)) of writing your own STF in the worker, with code samples.
+
+*TODO: Internalize all docs from book into this Repo*
 
 ### RPC Interface
 A worker provides a JSON RPC interface that runs on a secure websocket server inside the enclave. The websocket connection is secured by a TLS connection with a certificate signed with the enclave signing key.
