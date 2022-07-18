@@ -31,15 +31,15 @@ Examples of this workflow can be found in our CLI client implementation, [here](
 
 ## Building the worker in offchain worker mode
 
-In order to build the worker in offchain worker mode, the corresponding cargo feature `offchain-worker` needs to be set. In the Makefiles, the environment variable `ADDITIONAL_WORKER_FEATURES` is used to set the cargo features. 
+In order to build the worker in offchain worker mode, the corresponding cargo feature `offchain-worker` needs to be set. In the Makefiles, the environment variable `WORKER_MODE` is used to set the cargo features. 
 
 In case you build with `make` directly, do so with:
 
 ```
-ADDITIONAL_WORKER_FEATURES=offchain-worker make
+WORKER_MODE=offchain-worker make
 ```
 
-In case you use docker with our `build.Dockerfile`, use `--build-arg WORKER_MODE=offchain-worker` to set the corresponding docker `ARG`.
+In case you use docker with our `build.Dockerfile`, use `--build-arg WORKER_MODE_ARG=offchain-worker` to set the corresponding docker `ARG`.
 
 An example of a docker build command (as currently used for GitHub CI):
 
