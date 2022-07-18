@@ -44,7 +44,7 @@ In case you use docker with our `build.Dockerfile`, use `--build-arg WORKER_MODE
 An example of a docker build command (as currently used for GitHub CI):
 
 ```
-docker build -t integritee-worker --target deployed-worker --build-arg WORKER_MODE=offchain-worker -f build.Dockerfile .
+docker build -t integritee-worker --target deployed-worker --build-arg WORKER_MODE_ARG=offchain-worker -f build.Dockerfile .
 ``` 
 
 
