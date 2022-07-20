@@ -22,4 +22,7 @@ Substrate pallets – pre-built modules of the Substrate framework – can be re
 
 For a more detailed explanation of how sidechains work, read through [Integritee's Tokenomics](https://uploads-ssl.webflow.com/60c21bdfde439ba700ea5c56/60e6b16b0d252defda72fe07\_Integritee%20AG%20Token%20Economics\_2021.pdf).
 
-Developers might want to check out our [tutorial on how to build with the SDK](https://www.youtube.com/watch?v=yHlSUevPvH0\&list=PLp0\_ueXY\_enX6S5sogeo7GHD1BXTLj5Xr\&index=33).
+Developers might want to check out the following resources:
+* [Sidechain SDK documentation](../../for-developers/sidechain-sdk.md)
+* [Offchain worker SDK documentation](../../for-developers/offchain-worker-sdk.md)
+* [Youtube tutorial on how to build with the SDK](https://www.youtube.com/watch?v=yHlSUevPvH0\&list=PLp0\_ueXY\_enX6S5sogeo7GHD1BXTLj5Xr\&index=33)

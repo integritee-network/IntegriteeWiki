@@ -22,6 +22,8 @@
   * [TEEracle](for-developers/teeracle.md)
   * [Sidechain SDK](for-developers/sidechain-sdk.md)
   * [Offchain Worker SDK](for-developers/offchain-worker-sdk.md)
+  * [Demos](for-developers/demos/README.md)
+    * [Sidechain Demo](for-developers/demos/sidechain-demo.md)  
 * [Misc](misc/README.md)
   * [Intel SGX](misc/intel-sgx.md)
   * [Contributing](misc/contributing.md)
