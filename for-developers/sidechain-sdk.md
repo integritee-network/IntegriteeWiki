@@ -34,9 +34,15 @@ An example of a docker build command (as currently used for GitHub CI):
 docker build -t integritee-worker --target deployed-worker --build-arg WORKER_MODE_ARG=sidechain -f build.Dockerfile .
 ```
 
-## Integrating you own business logic / STF into the sidechain
+## Customizing a sidechain validateer
 
+### Business logic / STF
 
+This is the core part of the code changes necessary to turn the generic worker into your specific use-case. Read more in [this dedicated section](../for-developers/custom-business-logic-stf/README.md).
+
+### RPC Interface
+
+[this section](rpc-interface.md)
 
 ### Default client workflow
 
@@ -53,30 +59,6 @@ Default workflow for executing operations on a sidechain validateer from a clien
 Examples of this workflow can be found in our CLI client implementation, [here](https://github.com/integritee-network/worker/blob/72d9ba960803b367a9cb4f0bc62d0f4a4b13fe6d/cli/src/trusted_commands.rs#L167) and [here](https://github.com/integritee-network/worker/blob/72d9ba960803b367a9cb4f0bc62d0f4a4b13fe6d/cli/src/trusted_operation.rs#L98).
 
 
-## Customizing a sidechain validateer
-
-### Business logic
-
-Introducing your own business logic into an offchain worker, is mostly done in the STF crate [`ita-stf`](https://github.com/integritee-network/worker/tree/master/app-libs/stf). The `TrustedCall` and `TrustedGetter` structs are the definitions of the business logic and should be extended to match your use-case. The default implementation contains some basic logic for transferring, shielding and unshielding funds.
-
-```rust
-pub enum TrustedCall {
-	balance_set_balance(...),
-	balance_transfer(...),
-	balance_unshield(...),
-	balance_shield(...)
-}
-```
-
-```rust
-pub enum TrustedGetter {
-	free_balance(...),
-	reserved_balance(...),
-	nonce(...),
-}
-```
-
-Executing the business logic is done in [`stf_sgx.rs`](https://github.com/integritee-network/worker/blob/master/app-libs/stf/src/stf_sgx.rs), where you implement your business logic for each trusted call ([`fn execute(..)`](https://github.com/integritee-network/worker/blob/72d9ba960803b367a9cb4f0bc62d0f4a4b13fe6d/app-libs/stf/src/stf_sgx.rs#L126)) and trusted getter ([`fn get_state(..)`](https://github.com/integritee-network/worker/blob/72d9ba960803b367a9cb4f0bc62d0f4a4b13fe6d/app-libs/stf/src/stf_sgx.rs#L89)). 
 
 
 
@@ -85,33 +67,3 @@ Executing the business logic is done in [`stf_sgx.rs`](https://github.com/integr
 The [Integritee book](https://book.integritee.network/introduction.html) also shows a concrete [example](https://book.integritee.network/howto_stf.html#integritee-worker) ([Encointer](https://encointer.org/)) of writing your own STF in the worker, with code samples.
 
 *TODO: Internalize all docs from book into this Repo*
-
-### RPC Interface
-A worker provides a JSON RPC interface that runs on a secure websocket server inside the enclave. The websocket connection is secured by a TLS connection with a certificate signed with the enclave signing key.
-
-By default, the JSON RPC interface of a worker provides functions to:
-* Interact with the trusted operation pool
-* Query state (getters)
-* Get the shielding key (for encrypting trusted operations on the client side)
-
-You can, of course, also add your own RPC functions by extending the `IoHandler` [here](https://github.com/integritee-network/worker/blob/72d9ba960803b367a9cb4f0bc62d0f4a4b13fe6d/enclave-runtime/src/rpc/worker_api_direct.rs#L57). Note that all JSON strings, incoming parameters and outgoing results, are expected to be hex encoded.
-
-An example of a new RPC method called `my_own_rpc_method`, added to the `IoHandler` `io` :
-
-```rust
-	io.add_sync_method("my_own_rpc_method", move |params: Params| {
-
-        // Get the hex encoded parameters (if any, otherwise skip this).
-        let hex_encoded_params = params.parse::<Vec<String>>().map_err(|e| format!("{:?}", e))?;
-
-        // Decode the parameters to your desired concrete object (`Request` in this example).
-	    let request =
-		    Request::from_hex(&hex_encoded_params[0].clone()).map_err(|e| format!("{:?}", e))?;
-
-        // Process the request and generate response
-        let result = call_my_function(request);
-
-        // Return 
-		Ok(json!(result.to_hex()))
-	});
-```
