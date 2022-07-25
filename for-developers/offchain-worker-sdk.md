@@ -48,13 +48,19 @@ This is the core part of the code changes necessary to turn the generic worker i
 
 In case you want to extend the existing RPC interface, [this section](rpc-interface.md) tell you how.
 
-### Default client workflow
+### CLI Client
+
+A simple [CLI client](https://github.com/integritee-network/worker/tree/master/cli) implementation is available in the worker repository, to show case communication with the worker, either by 'direct invocation' or 'indirect invocation'. For an offchain-worker, only 'indirect invocation' is available.
+
+The CLI client uses [JSON RPC 2.0](https://www.jsonrpc.org/specification) over web-socket to communicate with a worker (direct invocation and trusted getters), as can be seen [here](https://github.com/integritee-network/worker/blob/a9a5afdb2de093de0062d7cb7ad302b8501e24a0/cli/src/trusted_operation.rs#L226) for example. The web-socket connection is secured by TLS with an enclave self-signed certificate.
+
+#### Default client workflow for indirect invocation
 
 Default workflow for executing operations on an offchain worker from a client's perspective:
 
-1. Compose your operation, e.g. `balance_transfer`
-2. Get the shielding key from an off-chain worker
-    * In case there are multiple off-chain workers, any of them will work, since they all share the shielding key
+1. Compose your trusted call, e.g. `TrustedCall::balance_transfer`
+2. Get the shielding key from an offchain worker
+    * In case there are multiple offchain workers, any of them will work, since they all share the same shielding key
 3. Encode and encrypt the operation using the shielding key
 4. Wrap the encrypted operation into a parentchain extrinsic
 5. Send the extrinsic to the parentchain
