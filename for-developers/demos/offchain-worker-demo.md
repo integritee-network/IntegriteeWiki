@@ -35,9 +35,16 @@ integritee-worker-2    | 2022/07/20 13:50:56 Waiting for http://integritee-worke
 ```
 is to be expected, it results from the service `integritee-worker-2` polling and waiting until `integritee-worker-1` is initialized (the same will appear for the demo service, with respect to `worker-2`).
 
-A successful demo run will show (TODO)
+A successful demo run will show
 ```
-
+integritee-indirect-invocation-demo |
+integritee-indirect-invocation-demo | Get balance of Alice's incognito account
+integritee-indirect-invocation-demo | 20000000000
+integritee-indirect-invocation-demo | * Get balance of Alice's on-chain account
+integritee-indirect-invocation-demo | 599926837744000
+integritee-indirect-invocation-demo |
+integritee-indirect-invocation-demo | test passed (2nd time)
+integritee-indirect-invocation-demo exited with code 0
 ```
 at the end of the log output, before the docker containers are stopped.
 

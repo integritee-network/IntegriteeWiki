@@ -6,7 +6,7 @@ This question is mostly answered in the Integritee book, [here](https://book.int
 
 ### Which use-cases are suited for a sidechain validateer?
 
-A sidechain validateer is typically used, when high transaction throughput of trusted transactions is required. The sidechain synchronizes validateers, so 'direct invocation' can be used to execute transactions. This means transactions do not need to be submitted to the layer 1 chain, but can directly be submitted to a specific validateer instance using an RPC interface. 
+A sidechain validateer is typically used, when high transaction throughput of trusted transactions is required. The sidechain synchronizes validateers, so 'direct invocation' can be used to execute transactions. This means transactions do not need to be submitted to the layer 1 blockchain, but can directly be submitted to a specific validateer instance using an RPC interface. 
 
 ## How to use the SDK
 
@@ -42,7 +42,7 @@ This is the core part of the code changes necessary to turn the generic worker i
 
 ### RPC Interface
 
-[this section](rpc-interface.md)
+In case you want to extend the existing RPC interface, [this section](rpc-interface.md) tell you how.
 
 ### Default client workflow
 
@@ -57,13 +57,3 @@ Default workflow for executing operations on a sidechain validateer from a clien
 6. Wait for the `ProcessedParentchainBlock` event, with the hash of the parentchain block including your extrinsic.
 
 Examples of this workflow can be found in our CLI client implementation, [here](https://github.com/integritee-network/worker/blob/72d9ba960803b367a9cb4f0bc62d0f4a4b13fe6d/cli/src/trusted_commands.rs#L167) and [here](https://github.com/integritee-network/worker/blob/72d9ba960803b367a9cb4f0bc62d0f4a4b13fe6d/cli/src/trusted_operation.rs#L98).
-
-
-
-
-
-#### Example from Integritee book
-
-The [Integritee book](https://book.integritee.network/introduction.html) also shows a concrete [example](https://book.integritee.network/howto_stf.html#integritee-worker) ([Encointer](https://encointer.org/)) of writing your own STF in the worker, with code samples.
-
-*TODO: Internalize all docs from book into this Repo*

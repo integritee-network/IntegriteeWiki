@@ -57,3 +57,4 @@ Code snippet taken from [here](https://github.com/integritee-network/worker/blob
 
 ## Examples
 
+* [Encointer (advanced)](./example-encointer.md)
