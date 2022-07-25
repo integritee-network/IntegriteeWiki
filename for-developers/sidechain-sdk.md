@@ -11,10 +11,10 @@ A sidechain validateer is typically used, when high transaction throughput of tr
 ## How to use the SDK
 
 1. Experiment with the template, [running the sidechain demo](./demos/sidechain-demo.md)
-2. Fork the worker repository `https://github.com/integritee-network/worker.git`
+2. Fork the worker repository `https://github.com/integritee-network/worker.git` from one of the SDK release branches (e.g. `sdk-v0.1.0-polkadot-v0.9.26`)
 3. Build the worker in sidechain mode
 4. Write and integrate your own business logic, e.g. in a substrate pallet
-5. Deploy on the Integritee parachain or you own solo chain
+5. Deploy on the [Integritee parachain](integrate-with-integritee-parachain.md) or you own solo chain
 
 ## Building the worker in sidechain validateer mode
 
@@ -42,18 +42,10 @@ This is the core part of the code changes necessary to turn the generic worker i
 
 ### RPC Interface
 
-In case you want to extend the existing RPC interface, [this section](rpc-interface.md) tell you how.
+In case you want to extend the existing RPC interface, [this section](rpc-interface.md) tells you how.
 
-### Default client workflow
+### CLI Client
 
-Default workflow for executing operations on a sidechain validateer from a client's perspective (direct invocation):
+A simple [CLI client](https://github.com/integritee-network/worker/tree/master/cli) implementation is available in the worker repository, to show case communication with the worker, either by 'direct invocation' or 'indirect invocation'. For a sidechain validateer, 'direct invocation' will likely be the predominant way of communicating with a worker.
 
-1. Compose your operation, e.g. `balance_transfer`
-2. Get the shielding key from an off-chain worker
-    * In case there are multiple off-chain workers, any of them will work, since they all share the shielding key
-3. Encode and encrypt the operation using the shielding key
-4. Wrap the encrypted operation into a parentchain extrinsic
-5. Send the extrinsic to the parentchain
-6. Wait for the `ProcessedParentchainBlock` event, with the hash of the parentchain block including your extrinsic.
-
-Examples of this workflow can be found in our CLI client implementation, [here](https://github.com/integritee-network/worker/blob/72d9ba960803b367a9cb4f0bc62d0f4a4b13fe6d/cli/src/trusted_commands.rs#L167) and [here](https://github.com/integritee-network/worker/blob/72d9ba960803b367a9cb4f0bc62d0f4a4b13fe6d/cli/src/trusted_operation.rs#L98).
+The CLI client uses [JSON RPC 2.0](https://www.jsonrpc.org/specification) over web-socket to communicate with a worker (direct invocation and trusted getters), as can be seen [here](https://github.com/integritee-network/worker/blob/a9a5afdb2de093de0062d7cb7ad302b8501e24a0/cli/src/trusted_operation.rs#L226) for example. The web-socket connection is secured by TLS with an enclave self-signed certificate.

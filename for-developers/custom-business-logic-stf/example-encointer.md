@@ -277,7 +277,7 @@ fn get_ceremony_registration(who: &AccountId, cid: &CurrencyIdentifier) -> Parti
 
 Again, we will introduce our getter in the CLI:
 
-#### encointer-worker/stf/src/cli.rs
+#### `encointer-worker/stf/src/cli.rs`
 
 ```rust
 .add_cmd(
@@ -316,6 +316,8 @@ Again, we will introduce our getter in the CLI:
         }),
 )
 ```
+
+**Note:** Encointer in this example still uses the outdated [`clap v2`](https://docs.rs/clap/2.34.0/clap/index.html) syntax to define the command line interface. Any SDK versions released will already be using the more recent [v3](https://docs.rs/clap/latest/clap/index.html) format.
 
 So we can query our index in the particpant registry with our CLI
 

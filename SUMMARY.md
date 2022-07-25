@@ -29,6 +29,7 @@
     * [Example: Encointer](for-developers/custom-business-logic-stf/example-encointer.md)
     * [How To Access On-chain Storage](for-developers/custom-business-logic-stf/howto-access-onchain-storage.md)
   * [RPC Interface](for-developers/rpc-interface.md)
+  * [Integritee Parachain Integration](for-developers/integrate-with-integritee-parachain.md)
 * [Misc](misc/README.md)
   * [Intel SGX](misc/intel-sgx.md)
   * [Contributing](misc/contributing.md)

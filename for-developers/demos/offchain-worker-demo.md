@@ -5,6 +5,18 @@ The demo sets up an Integritee Node (layer 1 chain) and runs 2 workers that both
 
 The CLI client (called by a script) is then used to perform transactions and query state for the `Alice` and `Bob` accounts. Transactions like `balance_transfer` are encrypted and then submitted to the parentchain. An offchain-worker then imports the parentchain block (upon finalization), decrypts and executes any transactions it finds. Both offchain-workers execute these transactions in parallel, there is no exchange of state or transaction information (like there is for the sidechain validateer).
 
+The sequence in the demo is as follows:
+
+1. Create incognito accounts for Alice and Bob, these are not disclosed to the public
+2. Shield funds on Alice's account, i.e. moving funds from Alice's public, on-chain account to her incognito account
+3. Transfer a fraction of the funds on Alice's incognito account to Bob's incognito account
+4. Un-shield the remaining funds on Alice's incognito account, moving them back to Alice's on-chain account
+5. Check balances on Alice's public on-chain account and her incognito account
+
+The demo executes this sequence twice and verifies the balances are correct after each run.
+
+For those who are interested in the demo script, can find it [here](TODO).
+
 ## Run the offchain-worker demo
 
 In order to run the demo, clone the worker repository:
