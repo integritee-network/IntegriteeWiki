@@ -102,7 +102,7 @@ The TEER token is the fuel that drives the Integritee platform — a common toke
 
 ### **Teeracle**
 
-_**(Waiting for info confirmation)**_
+The TEEracle is a customizable framework to easily build trusted oracles that provide API data to any Substrate-based blockchain in a secure and efficient way. Source-authenticated data is served to our Integritee Parachain and can subsequently be retrieved by any other blockchain through cross-chain messaging (XCM). The TEEracle allows to implement timestamped (to show the actuality of the data), custom oracle services, i.e., queries can be customized according to your specific needs.
 
 ### **Trusted Execution Environment**
 
