@@ -11,7 +11,7 @@ A sidechain validateer is typically used, when high transaction throughput of tr
 ## How to use the SDK
 
 1. Experiment with the template, [running the sidechain demo](./demos/sidechain-demo.md)
-2. Fork the worker repository `https://github.com/integritee-network/worker.git` from one of the SDK release branches (e.g. `sdk-v0.1.0-polkadot-v0.9.26`)
+2. Fork the worker repository `https://github.com/integritee-network/worker.git` from the SDK release branch (`sdk-v0.1.0-polkadot-v0.9.26`)
 3. Build the worker in sidechain mode
 4. Write and integrate your own business logic, e.g. in a substrate pallet
 5. Deploy on the [Integritee parachain](integrate-with-integritee-parachain.md) or you own solo chain

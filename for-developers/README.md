@@ -1,11 +1,15 @@
 # For Developers
 
+This document describes the SDK version **0.9.0**.
+
 The SDK spans components from multiple Integritee GitHub repositories:
 
 * [integritee-worker](https://github.com/integritee-network/worker)
 * [integritee-node](https://github.com/integritee-network/integritee-node)
 * [sgx-runtime](https://github.com/integritee-network/sgx-runtime)
 * [integritee-pallets](https://github.com/integritee-network/pallets)
+
+The SDK on each of these repositories has a release branch `sdk-v0.9.0-polkadot-v0.9.26`.
 
 These repositories are interdependent, as is described in the following diagram:
 
