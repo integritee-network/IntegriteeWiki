@@ -25,10 +25,10 @@ The different variants of SDKs are:
 
 Our SDK is released on stable release branches. An SDK release branch is available for all the above mentioned repository components. Their respective cargo dependencies point to the correct release branches. E.g. the `cargo.toml` in the worker will have the dependencies `sgx-runtime` and `node-runtime` defined as:
 ```TOML
-sgx-externalities = { ..., git = "https://github.com/integritee-network/sgx-runtime", branch = "sdk-v0.1.0-polkadot-v0.9.26" }
+sgx-externalities = { ..., git = "https://github.com/integritee-network/sgx-runtime", branch = "sdk-v0.9.0-polkadot-v0.9.26" }
 ```
 ```TOML
-my-node-runtime = { ..., git = "https://github.com/integritee-network/integritee-node", branch = "sdk-v0.1.0-polkadot-v0.9.26", ... }
+my-node-runtime = { ..., git = "https://github.com/integritee-network/integritee-node", branch = "sdk-v0.9.0-polkadot-v0.9.26", ... }
 ```
 
-The versioning scheme of these release branches is `sdk-v0.1.0-polkadot-v0.9.26`. The first part (`sdk-v0.1.0`) denotes the version of the SDK itself, the second part is the substrate version that this SDK version is based on ([`polkadot-v0.9.26`](https://github.com/paritytech/substrate/tree/polkadot-v0.9.26) in this example).
+The versioning scheme of these release branches is `sdk-v0.9.0-polkadot-v0.9.26`. The first part (`sdk-v0.9.0`) denotes the version of the SDK itself, the second part is the substrate version that this SDK version is based on ([`polkadot-v0.9.26`](https://github.com/paritytech/substrate/tree/polkadot-v0.9.26) in this example).
